@@ -1,11 +1,5 @@
 import { NextResponse } from "next/server";
 import pool from "../../../../lib/db";
-export function GET(request) {
-  return NextResponse.json({
-    status: "404",
-    msg: "Access to this page is not allowed",
-  });
-}
 
 export async function POST(request) {
   const { username, password } = await request.json();
