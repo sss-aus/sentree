@@ -8,6 +8,8 @@ import {
   FaCogs,
   FaThLarge,
 } from "react-icons/fa";
+import Navbar from "./components/Navbar/page";
+import Footer from "./components/Footer/page";
 
 export default function Home() {
   const services = [
@@ -58,7 +60,8 @@ export default function Home() {
   return (
     <div className="hide-scrollbar">
       {/* Home Section */}
-      <div className="w-full h-screen bg-[#202020] flex items-center justify-center">
+      <Navbar />
+      <div className="w-full h-screen bg-[#34617f] flex items-center justify-center">
         <section className="p-4 text-center">
           <h1 className="text-white text-4xl font-bold mb-4">
             Boost your career with Sentree today
@@ -131,6 +134,7 @@ export default function Home() {
             ))}
           </div>
         </section>
+        <Footer />
       </div>
 
       <style jsx global>{`
